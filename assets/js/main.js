@@ -4,7 +4,9 @@ const url = `https://pokeapi.co/api/v2/pokemon?${offset}=0&limit=${limit}`;
 
 fetch(url)
   .then(function (response) {
-    console.log(response);
+    response.json().then(function (responseBody) {
+      console.log(responseBody);
+    });
   })
   .catch(function (error) {
     console.error(error);
