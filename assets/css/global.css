@@ -17,7 +17,7 @@ body{
 }
 
 .content h1{
-  color: red;
+  color: rgb(83, 97, 205);
 }
 
 @media screen and (min-width: 992px){
@@ -27,4 +27,27 @@ body{
     margin: 1rem auto;
     border-radius: 1rem;
   }
+}
+
+.pagination{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loadMoreButton{
+  border: none;
+  background-color: rgb(83, 99, 219);
+  color: aliceblue;
+  padding: 3px 15px;
+  font-size: .825rem;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+#loadMoreButton:hover{
+  cursor: pointer;
+  filter: brightness(95%);
+  transform: scale(1.1);
 }

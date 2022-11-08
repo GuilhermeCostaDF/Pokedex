@@ -8,7 +8,9 @@ function convertPokemonToLi(pokemon) {
   return `
       <li class="pokemon ${pokemon.type}">
           <div class="number"><span>${pokemon.number}</span></div>
-          <span class="name">${pokemon.name}</span>
+          <span class="name">${
+            pokemon.name[0].toUpperCase() + pokemon.name.substring(1)
+          }</span>
           <div class="detail">
               <ol class="types">
                   ${pokemon.types
