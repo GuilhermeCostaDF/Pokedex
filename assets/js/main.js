@@ -14,3 +14,5 @@ fetch(url)
   .finally(function () {
     console.log("Requisição conluída");
   });
+
+//teste
